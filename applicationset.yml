@@ -23,6 +23,8 @@ spec:
         repoURL: https://github.com/JerebChase/gitops-config.git
         targetRevision: main
         path: '{{path}}'
+        directory:
+          recurse: true
       syncPolicy:
         automated:
           prune: true
