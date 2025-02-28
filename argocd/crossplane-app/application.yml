@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/JerebChase/gitops-config.git
     targetRevision: main
-    path: argocd/crossplane-app/resources
+    path: argocd/crossplane-app
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd
