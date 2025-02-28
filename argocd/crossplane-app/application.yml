@@ -3,8 +3,6 @@ kind: Application
 metadata:
   name: crossplane-app
   namespace: argocd
-  labels:
-    app.kubernetes.io/instance: crossplane-app
 spec:
   project: default
   source:

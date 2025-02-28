@@ -12,6 +12,8 @@ spec:
   template:
     metadata:
       name: '{{path.basename}}'
+      labels:
+        app.kubernetes.io/instance: '{{path.basename}}'
     spec:
       project: default
       destination:
