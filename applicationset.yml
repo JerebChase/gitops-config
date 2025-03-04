@@ -8,7 +8,7 @@ spec:
         repoURL: https://github.com/JerebChase/gitops-config.git
         revision: main
         directories:
-          - path: argocd/**
+          - path: argocd/*
   template:
     metadata:
       name: '{{path.basename}}'
