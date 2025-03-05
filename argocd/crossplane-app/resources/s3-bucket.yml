@@ -2,6 +2,7 @@ apiVersion: s3.aws.crossplane.io/v1beta1
 kind: Bucket
 metadata:
   generateName: my-crossplane-bucket-test-
+  namespace: crossplane
 spec:
   deletionPolicy: Delete
   forProvider:
