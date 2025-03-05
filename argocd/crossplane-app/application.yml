@@ -11,7 +11,7 @@ spec:
     path: argocd/crossplane-app
   destination:
     server: https://kubernetes.default.svc
-    namespace: argocd
+    namespace: crossplane
   syncPolicy:
     automated:
       prune: true
