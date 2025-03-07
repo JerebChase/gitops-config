@@ -5,7 +5,8 @@ resources:
 - github.com/argoproj/argo-cd//manifests/cluster-install?ref=v2.12.2
 - argocd-namespace.yml
 
-patchesJson6902:
+patches:
+- path: argocd-cm-patch.yml
 - target:
     group: ""
     version: v1
@@ -16,8 +17,5 @@ patchesJson6902:
     - op: replace
       path: "/spec/type"
       value: "LoadBalancer"
-
-patches:
-- path: argocd-cm-patch.yml
 
 namespace: argocd
