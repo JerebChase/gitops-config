@@ -5,9 +5,19 @@ resources:
 - github.com/argoproj/argo-cd//manifests/cluster-install?ref=v2.12.2
 - argocd-namespace.yml
 
-## changes to config maps
+patchesJson6902:
+- target:
+    group: ""
+    version: v1
+    kind: Service
+    name: argocd-server
+    namespace: argocd
+  patch: |-
+    - op: replace
+      path: "/spec/type"
+      value: "LoadBalancer"
+
 patches:
 - path: argocd-cm-patch.yml
-- path: argocd-server-patch.yml
 
 namespace: argocd
