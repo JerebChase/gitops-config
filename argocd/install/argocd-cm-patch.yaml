@@ -9,3 +9,4 @@ data:
       - "*"
       kinds:
       - ProviderConfigUsage
+  kustomize.buildOptions: "--enable-helm"
