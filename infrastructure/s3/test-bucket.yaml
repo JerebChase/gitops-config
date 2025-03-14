@@ -3,10 +3,9 @@ kind: Bucket
 metadata:
   labels:
     testing.upbound.io/example-name: s3
-  name: random
+  name: random-blah-blee-a-bloo
 spec:
   forProvider:
-    objectLockEnabled: true
-    region: us-west-1
+    region: us-east-2
     tags:
       Name: SampleBucket
