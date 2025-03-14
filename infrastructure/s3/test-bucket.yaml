@@ -1,11 +1,11 @@
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: Bucket
 metadata:
+  annotations:
+    meta.upbound.io/example-id: s3/v1beta1/bucketlogging
   labels:
-    testing.upbound.io/example-name: s3
-  name: random-blah-blee-a-bloo
+    testing.upbound.io/example-name: log_bucket
+  name: log-bucket-random
 spec:
   forProvider:
     region: us-east-2
-    tags:
-      Name: SampleBucket
