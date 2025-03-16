@@ -4,8 +4,7 @@ metadata:
   name: crossplane-bucket-test-123456-website-config
 spec:
   forProvider:
-    bucketRef:
-      name: crossplane-bucket-test-123456
+    bucket: crossplane-bucket-test-123456
     region: us-east-2
   providerConfigRef:
     name: default
