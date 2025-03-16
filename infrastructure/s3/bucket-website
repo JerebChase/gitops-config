@@ -4,7 +4,9 @@ metadata:
   name: crossplane-bucket-test-123456-website-config
 spec:
   forProvider:
-    bucket: crossplane-bucket-test-123456
+    bucketSelector:
+      matchLabels:
+        my-label: crossplane-test
     indexDocument:
       suffix: index.html
     errorDocument:
