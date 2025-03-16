@@ -4,7 +4,7 @@ metadata:
   name: example
 spec:
   forProvider:
-    bucketSelector:
+    bucketRef:
       name: crossplane-bucket-test-123456
     errorDocument:
       - key: index.html
