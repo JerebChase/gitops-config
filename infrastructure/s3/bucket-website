@@ -11,3 +11,5 @@ spec:
     indexDocument:
       - suffix: index.html
     region: us-east-2
+    providerConfigRef:
+      name: default
