@@ -7,9 +7,9 @@ spec:
     bucketRef:
       name: crossplane-bucket-test-123456
     errorDocument:
-      - key: index.html
+      key: index.html
     indexDocument:
-      - suffix: index.html
+      suffix: index.html
     region: us-east-2
   providerConfigRef:
     name: default
