@@ -1,15 +1,11 @@
 apiVersion: s3.aws.upbound.io/v1beta1
 kind: BucketWebsiteConfiguration
 metadata:
-  name: example
+  name: crossplane-bucket-test-123456-website-config
 spec:
   forProvider:
     bucketRef:
       name: crossplane-bucket-test-123456
-    errorDocument:
-      key: index.html
-    indexDocument:
-      suffix: index.html
     region: us-east-2
   providerConfigRef:
     name: default
