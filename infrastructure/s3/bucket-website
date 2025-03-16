@@ -5,6 +5,10 @@ metadata:
 spec:
   forProvider:
     bucket: crossplane-bucket-test-123456
+    indexDocument:
+      suffix: index.html
+    errorDocument:
+      key: index.html
     region: us-east-2
   providerConfigRef:
     name: default
